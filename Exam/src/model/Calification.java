@@ -15,7 +15,7 @@ public class Calification {
 			this.result = "FAIL";
 		} else if (score >= 4 && score <= 7) {
 			this.result = "PASS";
-		} else if (score > 7) {
+		} else if (score > 7 && score <= 10) {
 			this.result = "PASS WITH MERIT";
 		}
 		this.score = score;
