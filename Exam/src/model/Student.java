@@ -16,4 +16,8 @@ public class Student {
 		this.province = province;
 	}
 
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
 }

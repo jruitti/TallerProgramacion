@@ -2,7 +2,6 @@ package model;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
-import java.util.LinkedList;
 
 public class Exam {
 
@@ -21,7 +20,14 @@ public class Exam {
 		this.date = date;
 		this.course = course;
 		this.degree = degree;
-		this.scores = new LinkedList<Calification>();
+	}
+
+	public Collection<Calification> getScores() {
+		return scores;
+	}
+
+	public void setScores(Collection<Calification> scores) {
+		this.scores = scores;
 	}
 
 }
