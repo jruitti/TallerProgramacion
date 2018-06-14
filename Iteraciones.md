@@ -6,14 +6,13 @@
 
 **Escenario:** Código fuente con errores intencionales, y Test que deben ser aprobados.
 
-
 ### Iteración 2
 **Objetivo:** Entender el proceso de crear código fuente a partir de los Test.
 
 **Escenario:** Test que deben ser aprobados, agregando el código fuente necesario.
+
 //TO-DO: Hacer mas test para darles en la segunda iteración
                
-                                                                
 ### Iteración 3
 **Objetivo:** Recibir nuevos requerimientos, e incorporarlos al código.
 
@@ -29,12 +28,10 @@ Garantizar que sigan funcionando los Test con las modificaciones necesarias.
 * El Domicilio aparezca como "San Martín 123 (La Rioja)"
 * La Materia aparezca en mayúsculas con formato "MATEMATICA - ING. EN SISTEMAS".
 
-**_Nota:_** Intentar que lo hagan desde el Test, y no desde el código fuente.
-                                                                
 ### Iteración 4
 **Objetivo:** Refactorización del código generado
 
-** Escenario:** Realizar una nueva ronda de refactorización para eliminar lo restante
-* Reemplazar condicionales con polimorfismo _(Interfaces o clases Abstractas)_
+**Escenario:** Realizar una nueva ronda de refactorización para eliminar lo restante
+* Reemplazar condicionales con polimorfismo _(¿Interfaces o clases Abstractas?)_
 * Comentarios
 * Nombres de variables y métodos no representativos
