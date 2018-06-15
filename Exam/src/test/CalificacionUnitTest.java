@@ -13,26 +13,38 @@ import model.Estudiante;
 class CalificacionUnitTest {
 
 	@Test
-	void getResult_scoreTen_ReturnPERFECT() {
-		Examen anExam = new Examen(LocalDateTime.of(2018, 6, 13, 16, 0), "Programación III", "Ingeniería en Sistemas");
-		Estudiante aStudent = new Estudiante("123456", "Diaz", "Pedro", "Av. San Martín 25", "La Rioja");
-		Calificacion aCalification = new Calificacion(aStudent, anExam, 10);
+	void getResultado_NotaDiez_RetornaSobresaliente() {
+		Examen unExamen = new Examen(LocalDateTime.of(2018, 6, 13, 16, 0), "Programación III", "Ingeniería en Sistemas");
+		Estudiante unEstudiante = new Estudiante("123456", "Diaz", "Pedro", "Av. San Martín 25", "La Rioja");
+		Calificacion unaCalificacion = new Calificacion(unEstudiante, unExamen, 10);
 
-		String result = aCalification.getResult();
+		String resultado = unaCalificacion.getResultado();
 
-		assertEquals("SOBRESALIENTE", result);
+		assertEquals("SOBRESALIENTE", resultado);
 
 	}
 
 	@Test
-	void getResult_scoreOffset_Error() {
-		Examen anExam = new Examen(LocalDateTime.of(2018, 6, 13, 16, 0), "Programación III", "Ingeniería en Sistemas");
-		Estudiante aStudent = new Estudiante("123456", "Diaz", "Pedro", "Av. San Martín 25", "La Rioja");
-		Calificacion aCalification = new Calificacion(aStudent, anExam, 15);
+	void getResultado_NotaSuperiorADiez_DevuelveError() {
+		Examen unExamen = new Examen(LocalDateTime.of(2018, 6, 13, 16, 0), "Programación III", "Ingeniería en Sistemas");
+		Estudiante unEstudiante = new Estudiante("123456", "Diaz", "Pedro", "Av. San Martín 25", "La Rioja");
+		Calificacion unaCalificacion = new Calificacion(unEstudiante, unExamen, 15);
 
-		String result = aCalification.getResult();
+		String resultado = unaCalificacion.getResultado();
 
-		assertEquals("ERROR", result);
+		assertEquals("ERROR", resultado);
+
+	}
+	
+	@Test
+	void getResultado_NotaInferiorAUno_DevuelveError() {
+		Examen unExamen = new Examen(LocalDateTime.of(2018, 6, 13, 16, 0), "Programación III", "Ingeniería en Sistemas");
+		Estudiante unEstudiante = new Estudiante("123456", "Diaz", "Pedro", "Av. San Martín 25", "La Rioja");
+		Calificacion unaCalificacion = new Calificacion(unEstudiante, unExamen, 0);
+
+		String resultado = unaCalificacion.getResultado();
+
+		assertEquals("ERROR", resultado);
 
 	}
 	

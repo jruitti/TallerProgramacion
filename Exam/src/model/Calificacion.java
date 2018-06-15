@@ -10,14 +10,6 @@ public class Calificacion {
 	public Calificacion(Estudiante estudiante, Examen test, Integer nota) {
 		this.estudiante = estudiante;
 		this.test = test;
-
-		if (nota > 0 && nota <= 4) {
-			this.resultado = "REPROBADO";
-		} else if (nota >= 4 && nota <= 7) {
-			this.resultado = "APROBADO";
-		} else if (nota > 7 && nota <= 10) {
-			this.resultado = "PERFECTO";
-		}
 		this.nota = nota;
 	}
 
