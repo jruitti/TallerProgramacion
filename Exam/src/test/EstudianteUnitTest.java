@@ -20,30 +20,16 @@ class EstudianteUnitTest {
 
 	@Test
 	void mostrarDatos_EstudianteCompleto_MostrarFormateado() {
-		Estudiante aStudent = new Estudiante();
-		aStudent.apellido = "Perez";
-		aStudent.nombre = "Juan";
-		aStudent.matricula = "190001";
+		Estudiante e = new Estudiante();
+		e.apellido = "Perez";
+		e.nombre = "Juan";
+		e.matricula = "190001";
 
-		assertEquals("Perez, Juan. (190001)", aStudent.mostrarDatos());
+		assertEquals("Perez, Juan. (190001)", e.mostrarDatos());
 	}
 	
-	@Test
-	void mostrarDomicilioCompleto_InstanciaDomicilio_MostrarFormateado() {
-		
-		Domicilio unDomicilio=new Domicilio("San Martín", 123, "La Rioja");
-		String resultado=unDomicilio.mostrarDomicilioCompleto();
-		
-		assertEquals("San Martín 123 (La Rioja)", resultado);
-	}
+
 	
-	@Test
-	void mostrarDatos_InstanciaAsignatura_MostrarFormateado() {
-		
-		Asignatura unaAsignatura=new Asignatura("Programacion III","Ingenieria en Sistemas");
-		String resultado=unaAsignatura.mostrarDatos();
-		
-		assertEquals("PROGRAMACION III - INGENIERIA EN SISTEMAS", resultado);
-	}
+
 
 }
