@@ -11,14 +11,13 @@
 
 **Escenario:** Test que deben ser aprobados, agregando el código fuente necesario.
 
-//TO-DO: Hacer mas test para darles en la segunda iteración
                
 ### Iteración 3
 **Objetivo:** Recibir nuevos requerimientos. Escribir Test para las nuevas clases.
 
 **Escenario:** Indicar que por análisis, se sugiere extraer los atributos correspondientes al domicilio en el Estudiante, y los correspondientes a la materia en el Examen, a respectivas nuevas Clases. Escribir los Test que aseguren que:
 * El Domicilio aparezca como "San Martín 123 (La Rioja)" (Atributos Calle - Numero - Provincia)
-* La Materia aparezca en mayúsculas con formato "MATEMATICA - ING. EN SISTEMAS (Atributos Materia - Carrera)
+* La Materia aparezca en mayúsculas con formato "MATEMATICA - INGENIERIA EN SISTEMAS (Atributos Materia - Carrera)
 
 ### Iteración 4
 **Objetivo:** Garantizar que sigan funcionando los Test existentes luego de la incorporacion de nuevas clases.
