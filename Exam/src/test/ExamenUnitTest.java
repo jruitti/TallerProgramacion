@@ -129,8 +129,9 @@ class ExamenUnitTest {
 
 		String resultado = unExamen.mostrarResumen();
 
-		assertEquals("Examen de PROGRAMACIÓN III - INGENIERIA EN SISTEMAS\nFecha: 13/06/2018 16:00\nAlumnos Inscriptos: 4\nCalificaciones:\n"+
+		assertEquals("Examen de PROGRAMACIÓN III - INGENIERÍA EN SISTEMAS\nFecha: 13/06/2018 16:00\nAlumnos Inscriptos: 4\nCalificaciones:\n"+
 		"Diaz, Pedro -> 3 (REPROBADO)\nLopez, Pedro -> 8 (APROBADO)\nPerez, Pedro -> 10 (SOBRESALIENTE)\nMartinez, Pedro -> 7 (APROBADO)", resultado);
 	}
+	
 
 }
